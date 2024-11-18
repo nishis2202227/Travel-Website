@@ -1,0 +1,224 @@
+/* Home.css */
+.home-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    background: url('https://plus.unsplash.com/premium_photo-1691414448564-813a32a67d9f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Popular Destinations */
+.popular-destinations {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.popular-destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.destination-card p {
+    padding: 0 1rem 1rem;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+}
+
+/* Featured Packages */
+.featured-packages {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.featured-packages h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.package-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.package-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.package-card h3 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.package-card p {
+    padding: 0 1rem;
+}
+
+.package-button {
+    margin: 1rem;
+    background-color: #1e90ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.package-button:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card h4 {
+    font-weight: 700;
+    margin-top: 1rem;
+}

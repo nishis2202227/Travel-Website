@@ -1,0 +1,103 @@
+/* Header.css */
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.logo {
+    height: 3.5rem; /* Adjust logo size */
+    padding: 0.5rem; /* Space around the logo */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.nav-link {
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.nav-link:hover {
+    background-color: #f0f8ff; /* Light blue */
+    color: #1e90ff; /* Bright blue */
+}
+
+/* Dropdown styling */
+.dropdown-container {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    min-width: 14rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 245, 245, 0.95));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 0.75rem 1.25rem;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dropdown-container.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.dropdown-item {
+    font-size: 0.875rem;
+    color: #333;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #1e90ff;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
