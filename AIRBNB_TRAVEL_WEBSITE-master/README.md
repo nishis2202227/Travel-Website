@@ -1,6 +1,5 @@
 
 # Fully Responsive Airbnb Travel Website beginner (consists of two pages "home-page" and "explore-page")
-## Click here for demo- https://ratneshmaurya.github.io/AIRBNB_TRAVEL_WEBSITE/
 ### "NOTE- It's mainly a frontend part till yet, I will try to add backend soon in future."
 ### Hope u will like it ☺️🤗.
 
